@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/cyber_black"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SECURE START"
+        android:textSize="14sp"
+        android:letterSpacing="0.2"
+        android:textColor="@color/neon_blue"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSENT"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_white"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Content Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/cyber_surface"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="32dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRIVACY PROTOCOLS"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/deep_sky_blue"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_white"
+                    android:lineSpacingExtra="6dp"
+                    android:text="• NO BACKGROUND MONITORING\n• NO AUDIO RECORDING\n• GPS ACTIVE ON-DEMAND ONLY\n\nThis application operates on a strict consent basis. Emergency alerts are generated only when manually triggered.\n\nSimulated location data (or real GPS if enabled) is shared via standard SMS protocols."/>
+            
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENCRYPT &amp; PROCEED"
+        android:backgroundTint="@color/deep_sky_blue"
+        android:textColor="@color/cyber_black"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnDecline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TERMINATE SESSION"
+        android:backgroundTint="@android:color/transparent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/alert_red"/>
+
+</LinearLayout>

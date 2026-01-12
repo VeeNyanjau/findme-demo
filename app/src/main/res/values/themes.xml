@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FindMe" parent="Theme.AppCompat.NoActionBar">
+        <!-- Main colors -->
+        <item name="colorPrimary">@color/deep_sky_blue</item>
+        <item name="colorPrimaryDark">@color/cyber_black</item>
+        <item name="colorAccent">@color/neon_blue</item>
+        
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/cyber_black</item>
+        
+        <!-- Text Colors -->
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Button Style -->
+        <item name="buttonStyle">@style/CyberButton</item>
+    </style>
+
+    <style name="CyberButton" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/deep_sky_blue</item>
+        <item name="android:textColor">@color/cyber_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

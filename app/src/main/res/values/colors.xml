@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cyber Security Palette -->
+    <color name="cyber_black">#0B1021</color>
+    <color name="cyber_surface">#161B2E</color>
+    
+    <color name="deep_sky_blue">#00BFFF</color>
+    <color name="neon_blue">#00E5FF</color>
+    
+    <color name="alert_red">#FF3333</color>
+    <color name="success_green">#00FF99</color>
+    
+    <color name="text_white">#E0E0E0</color>
+    <color name="text_secondary">#A0A0A0</color>
+    <color name="text_hint">#606060</color>
+
+    <!-- System Overrides -->
+    <color name="purple_200">#00BFFF</color>
+    <color name="purple_500">#00BFFF</color>
+    <color name="purple_700">#0099CC</color>
+    <color name="teal_200">#00E5FF</color>
+    <color name="teal_700">#00B2CC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
