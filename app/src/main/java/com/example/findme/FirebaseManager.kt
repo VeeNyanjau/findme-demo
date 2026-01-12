@@ -13,7 +13,13 @@ object FirebaseManager {
     // In a real app, strict security rules (auth) would be used.
     // For this prototype, we assume the database is in test mode (public read/write).
     // Explicitly using the URL provided by the user to avoid google-services.json missing it.
-    private val database: FirebaseDatabase = FirebaseDatabase.getInstance("https://findme-demo-15d1e-default-rtdb.firebaseio.com/")
+    private val database: FirebaseDatabase by lazy { 
+        try {
+            FirebaseDatabase.getInstance(BuildConfig.FIREBASE_DATABASE_URL) 
+        } catch (e: Exception) {
+            FirebaseDatabase.getInstance() // Fallback
+        }
+    }
     private val alertsRef: DatabaseReference = database.getReference("alerts")
 
     fun broadcastAlert(
@@ -91,6 +97,7 @@ object FirebaseManager {
 
         val listener = object : com.google.firebase.database.ChildEventListener {
             override fun onChildAdded(snapshot: com.google.firebase.database.DataSnapshot, previousChildName: String?) {
+                @Suppress("UNCHECKED_CAST")
                 val data = snapshot.value as? Map<String, Any> ?: return
                 // Check timestamp to avoid loading old history on startup
                 // Note: This relies on device clocks being roughly synced.

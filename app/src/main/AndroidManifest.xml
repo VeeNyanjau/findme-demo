@@ -10,6 +10,7 @@
 
 
     <application
+        android:name=".FindMeApplication"
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -40,14 +41,17 @@
             android:name=".MainActivity"
             android:exported="false" />
 
+
         <!-- Background Safety Service -->
         <service
             android:name=".SafetyService"
             android:exported="false"
             android:foregroundServiceType="dataSync" />
 
-
-
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            tools:node="remove" />
     </application>
 
 </manifest>
