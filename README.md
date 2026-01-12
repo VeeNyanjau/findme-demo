@@ -1,6 +1,6 @@
 NB# Please enter phone number and Community to get ID
 FindMe 📍
-FindMe is a personal safety application designed to help users share their location and status in emergencies. It uses Firebase for real-time data synchronization and supports offline SMS alerts.
+FindMe is a personal safety application designed to help users share their location and status in emergencies. It uses Firebase for real-time data synchronization.
 
 ✨ Features
 Real-time Location Sharing: Updates location to Firebase Realtime Database.
@@ -42,8 +42,6 @@ Follow the on-screen instructions to start sharing your location and connecting 
 🔧 Notes
 
 Ensure your device/emulator has internet access for full functionality
-
-Firebase is used for real-time updates; offline SMS alerts require permissions for SMS sending
 
 Background service keeps your location and status updated even if the app is minimized
 
