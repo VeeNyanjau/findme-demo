@@ -1,4 +1,5 @@
 CHECK OUT THE LATEST RELEASE AND INSTALL DIRECTLY TO CELL
+
 NB# Please enter phone number and Community to get ID
 FindMe 📍
 FindMe is a personal safety application designed to help users share their location and status in emergencies. It uses Firebase for real-time data synchronization.
